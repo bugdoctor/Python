@@ -37,10 +37,6 @@
 
 ```json
 [
-    // {
-    //  "keys": ["alt+c"],
-    //  "command": "markdown_preview", "args": {"target": "browser"}
-    // },
     {
         "keys": ["ctrl+shift+c"],
         "command": "copy_path"
@@ -66,10 +62,6 @@
         "command": "close_file"
     },
     {
-        "keys": ["ctrl+shift+c"],
-        "command": "Convert To Utf8"
-    },
-    {
         "keys": ["f1"],
         "command": "side_bar_files_open_with", "args": {"extensions": ".*", "paths": [], "application": "C:\\Program Files\\Internet Explorer\\iexplore.exe"}
     },
@@ -82,7 +74,7 @@
 
 ### Installed Package:
 
-```json
+```
 BracketHighlighter
 FileDiffs
 Keymaps
@@ -91,19 +83,24 @@ Package Control
 Predawn Monokai
 Predawn
 Pretty JSON
+OmniMarkupPreviewer
+Python PEP8 Autoformat
 SideBarEnhancements
+SublimeLinter
 SublimeLinter-pylint
+SublimeCodeIntel
 SublimeTmpl
 Theme - Afterglow
 Theme - Soda
 TortoiseSVN
+Terminal
 TrailingSpaces
 ```
 ### Package Control无法安装插件：
 
 >打开 Sublime Text 3，在菜单栏中选择：Preferences → Package settings → Package Control → Settings – User
 
-```json
+```
 "channels": [
         "https://git.oschina.net/mugood/PackageControl/raw/master/channel_v3.json"
     ],
