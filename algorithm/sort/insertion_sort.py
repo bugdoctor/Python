@@ -42,23 +42,13 @@ def insert_sort(sort_list):
     return sort_list
 
 def my_insert_sort(sort_list):
-    length = len(sort_list)
-
-    for i in xrange(1, length):
-
-        if sort_list[i] < sort_list[i - 1]:
-            index = i
-            guard = sort_list[i]
-
-            for j in range(i-1, -1, -1):
-
-                if sort_list[j] > guard:
-                    sort_list[j + 1] = sort_list[j]
-                    index = j
-                else:
-                    break
-
-            sort_list[index] = guard
+    for i in xrange(len(sort_list)):
+        guard = sort_list[i]
+        pos = i
+        while pos > 0 and sort_list[pos - 1] > guard:
+            sort_list[pos] = sort_list[pos - 1]
+            pos = pos -1
+        sort_list[pos] = guard
 
     return sort_list
 
